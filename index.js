@@ -1,6 +1,6 @@
 async function getWeatherData(location) {
     try {
-        const fetchData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=2e14a66e8f1dc002f6ee8b2171356f92`, {mode: 'cors'});    
+        const fetchData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=2e14a66e8f1dc002f6ee8b2171356f92`, {mode: 'cors'});    
         if (!fetchData.ok) {
             throw new Error(fetchData.statusText); 
         }
