@@ -68,9 +68,12 @@ async function submitWeatherForm(e) {
 }
 
 function switchTemperatureFormat(e) {
+    e.target.classList.add('selected-btn');
     if (e.target.id == 'celsius-btn') {
+        document.querySelector('#fahrenheit-btn').classList.remove('selected-btn');
         tempsInCelsius = true;
     } else {
+        document.querySelector('#celsius-btn').classList.remove('selected-btn');
         tempsInCelsius = false;
     }
     

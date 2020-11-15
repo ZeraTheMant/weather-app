@@ -9,27 +9,37 @@
 </head>
 
 <body>
-    <form>
-        <input type="text" placeholder="Enter location here" required/>
-        <button type="submit">Get weather data</button>
-    </form>
-    
-    <div id="weather-info-div" class="hidden">
-        <p>
-            <img src="http://openweathermap.org/img/w/10d.png"/>
-            <span id="current-temp"></span>
-        </p>
-        <h2 id="location"></h2>
-        <p id="weather-desc"></p>
-        <p>Humidity: <span id="humidity"></span></p>
-        <p>Pressure: <span id="pressure"></span></p>
-        <p>Feels like: <span id="feels-like-temp"></span></p>
-        
-        <div>
-            <button class="temp-btn" id="celsius-btn">Celsius</button>
-            <button class="temp-btn" id="fahrenheit-btn">Fahrenheit</button>
-        </div>
+    <header>
+        <h2>&#x1F301; WEATHER APP</h2>
+    </header>
+
+    <div id="search-form-container">
+        <form>
+            <div>
+                <input type="text" placeholder="Enter location here" required/>
+                <button type="submit">&#128269;</button>
+            </div>
+        </form>
     </div>
+    
+    <main>
+        <div id="weather-info-div" class="hidden">
+            <p id="main-temp">
+                <img src="http://openweathermap.org/img/w/10d.png"/>
+                <span id="current-temp"></span>
+            </p>
+            <h2 id="location"></h2>
+            <p id="weather-desc"></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Pressure: <span id="pressure"></span></p>
+            <p>Feels like: <span id="feels-like-temp"></span></p>
+            
+            <div>
+                <button class="temp-btn selected-btn" id="celsius-btn">Celsius</button>
+                <button class="temp-btn" id="fahrenheit-btn">Fahrenheit</button>
+            </div>
+        </div>
+    </main>
     
     <script src="index.js"></script>
 </body>

@@ -11,8 +11,58 @@ html {
 
 body {
     font-family: Helvetica;
+    background-color: #228B22;
 }
 
 .hidden {
     display: none;
+}
+
+header {
+    color: white;
+    background-color: #7CFC00;
+    padding: 10px;
+}
+
+#search-form-container {
+    border-bottom: 2px solid grey;
+    padding: 30px;
+}
+
+form,
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    align-items: center;
+}
+
+input,
+button {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background: darkgreen;
+}
+
+
+#weather-info-div {
+    text-align: center;
+    color: white;
+}
+
+#weather-info-div p {
+    margin: 5px;
+}
+
+.selected-btn {
+    color: black;
+    background: white;
 }
